@@ -17,6 +17,9 @@ header.cabecalho{
   border-radius: 10px;
   margin-bottom: -40px;
 }
+header.cabecalho div.menus{
+  width: 900px;
+}
 header.cabecalho div.menus a{
   margin: 10px;
   padding: 5px;
