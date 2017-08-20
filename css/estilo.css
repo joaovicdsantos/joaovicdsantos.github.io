@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body{
   font-family: Arial, sans-serif;
-  background-image: url('../_imagens/fundo.png');
+  background-image: url('../imagens/fundo.png');
   background-size: 15px 130px;
   background-repeat: repeat-x;
 }
@@ -79,7 +79,7 @@ article h1{
   padding: 5px;
 }
 article.artigoPrincipal{
-  background-image: url('../_imagens/banner_principal.jpg');
+  background-image: url('../imagens/banner_principal.jpg');
   padding: 10px;
   height: 270px;
 }
@@ -95,7 +95,7 @@ article.artigoPrincipal img{
 article.artigo_Dias{
   width: 425px;
   float: left;
-  background-image: url('../_imagens/banner_dias.jpg');
+  background-image: url('../imagens/banner_dias.jpg');
   background-size: 100% 100%;
   padding: 10px;
   margin-bottom: 5px;
@@ -105,7 +105,7 @@ article.artigo_Dias{
 article.artigo_Programacao{
   width: 425px;
   float: right;
-  background-image: url('../_imagens/banner_programacao.jpg');
+  background-image: url('../imagens/banner_programacao.jpg');
   background-size: 100% 100%;
   padding: 10px;
   margin-bottom: 5px;
@@ -115,7 +115,7 @@ article.artigo_Programacao{
 article.artigo_coisas{
   width: 425px;
   float: left;
-  background-image: url('../_imagens/banner_coisas.jpg');
+  background-image: url('../imagens/banner_coisas.jpg');
   background-size: 100% 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -125,7 +125,7 @@ article.artigo_coisas{
 article.artigo_tutoriais{
   width: 425px;
   float: right;
-  background-image: url('../_imagens/banner_tutoriais.jpg');
+  background-image: url('../imagens/banner_tutoriais.jpg');
   background-size: 100% 100%;
   padding: 10px;
   margin-bottom: 10px;
