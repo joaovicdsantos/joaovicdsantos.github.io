@@ -1,0 +1,144 @@
+@charset "UTF-8";
+body{
+  font-family: Arial, sans-serif;
+  background-image: url('../_imagens/fundo.png');
+  background-size: 15px 130px;
+  background-repeat: repeat-x;
+}
+p{
+  text-align: justify;
+  text-indent: 20px;
+  color: #e5e5e5;
+}
+header.cabecalho{
+  width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: -40px;
+}
+header.cabecalho div.menus a{
+  margin: 10px;
+  padding: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline;
+  transition: 1s, all;
+  font-weight: 400;
+  font-size: 12pt;
+}
+header.cabecalho div.menus a#atual{
+  color: #004fba;
+  background-color: #ffffff;
+  text-decoration: underline;
+  border-radius: 10px;
+}
+header.cabecalho div.menus a:hover{
+  color: #004fba;
+  background-color: #ffffff;
+  text-decoration: underline;
+  border-radius: 10px;
+}
+header.cabecalho div.menus{
+  position: relative;
+  left: 320px;
+  top: -65px;
+}
+div.main{
+  margin-top: -20px;
+  width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+}
+img{
+  width: 240px;
+  position: relative;
+  margin-bottom: 5px;
+  top: -10px;
+}
+article{
+  box-shadow: 1px 1px 5px;
+}
+article a{
+  color: #004fba;
+  background-color: #d3d3d3;
+  font-weight: 400;
+  padding: 5px;
+  transition: 1s, all;
+}
+article a:hover{
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+article p{
+  color: #d3d3d3;
+}
+article h1{
+  color: #d3d3d3;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+}
+article.artigoPrincipal{
+  background-image: url('../_imagens/banner_principal.jpg');
+  padding: 10px;
+  height: 270px;
+}
+article.artigoPrincipal p, h1{
+  width: 400px;
+}
+article.artigoPrincipal img{
+  position: relative;
+  width: 450px;
+  top: -200px;
+  left: 420px;
+}
+article.artigo_Dias{
+  width: 425px;
+  float: left;
+  background-image: url('../_imagens/banner_dias.jpg');
+  background-size: 100% 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 8px;
+  height: 250px;
+}
+article.artigo_Programacao{
+  width: 425px;
+  float: right;
+  background-image: url('../_imagens/banner_programacao.jpg');
+  background-size: 100% 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 8px;
+  height: 250px;
+}
+article.artigo_coisas{
+  width: 425px;
+  float: left;
+  background-image: url('../_imagens/banner_coisas.jpg');
+  background-size: 100% 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  height: 250px;
+}
+article.artigo_tutoriais{
+  width: 425px;
+  float: right;
+  background-image: url('../_imagens/banner_tutoriais.jpg');
+  background-size: 100% 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  height: 250px;
+}
+footer#rodape{
+  height: 50px;
+  width: 100%;
+  clear: both;
+  background-color: #004fba;
+}
+footer#rodape p{
+  text-align: center;
+  padding: 15px;
+}
