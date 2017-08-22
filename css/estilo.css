@@ -54,10 +54,10 @@ div.main{
   padding: 10px;
   margin-bottom: -30px;
 }
-img#artigo_principal{
+img#logo{
   position: relative;
   margin-bottom: 5px;
-  top: -10px;
+  top: -1px;
 }
 article{
   box-shadow: 1px 1px 5px;
@@ -90,10 +90,10 @@ article.artigo_principal{
 article.artigo_principal p, h1{
   width: 400px;
 }
-article.artigo_principal img{
+article.artigo_principal img#artigo_principal{
   position: relative;
   width: 450px;
-  top: -400px;
+  top: -200px;
   left: 420px;
 }
 article.artigo_dias{
