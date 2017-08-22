@@ -54,7 +54,7 @@ div.main{
   padding: 10px;
   margin-bottom: -30px;
 }
-img{
+img#artigo_principal{
   position: relative;
   margin-bottom: 5px;
   top: -10px;
@@ -81,22 +81,22 @@ article h1{
   background-color: rgba(0, 0, 0, 0.6);
   padding: 5px;
 }
-article.artigoPrincipal{
+article.artigo_principal{
   background-image: url('../imagens/banner_principal.jpg');
   padding: 10px;
   height: 270px;
   width: 880px;
 }
-article.artigoPrincipal p, h1{
+article.artigo_principal p, h1{
   width: 400px;
 }
-article.artigoPrincipal img{
+article.artigo_principal img{
   position: relative;
   width: 450px;
   top: -200px;
   left: 420px;
 }
-article.artigo_Dias{
+article.artigo_dias{
   width: 425px;
   float: left;
   background-image: url('../imagens/banner_dias.jpg');
@@ -106,7 +106,7 @@ article.artigo_Dias{
   margin-top: 8px;
   height: 250px;
 }
-article.artigo_Programacao{
+article.artigo_programacao{
   width: 425px;
   float: right;
   background-image: url('../imagens/banner_programacao.jpg');
