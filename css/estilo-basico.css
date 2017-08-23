@@ -44,7 +44,7 @@ header.cabecalho div.menus a:hover{
 }
 header.cabecalho div.menus{
   position: relative;
-  left: 320px;
+  left: 330px;
   top: -65px;
 }
 div.main{
@@ -137,13 +137,14 @@ article.artigo_tutoriais{
   height: 250px;
 }
 footer#rodape{
-  width: 100%;
+  width: 900px;
   height: 70px;
+  margin: 0 auto;
   clear: both;
   background-color: #004fba;
   margin-bottom: -10px;
 }
 footer#rodape p{
   text-align: center;
-  padding-top: 12px;
+  padding-top: 15px;
 }
