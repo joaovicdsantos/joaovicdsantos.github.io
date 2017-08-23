@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+article{
+  box-shadow: 1px 1px 5px;
+}
+article a{
+  color: #004fba;
+  background-color: #d3d3d3;
+  font-weight: 400;
+  padding: 5px;
+  transition: 1s, all;
+}
+article a:hover{
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+article p{
+  color: #d3d3d3;
+}
+article h1{
+  color: #d3d3d3;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+}
+article.artigo_principal{
+  background-image: url('../imagens/banner_principal.jpg');
+  padding: 10px;
+  height: 270px;
+  width: 880px;
+}
+article.artigo_principal p, h1{
+  width: 400px;
+}
+article.artigo_principal img#artigo_principal{
+  position: relative;
+  width: 450px;
+  top: -200px;
+  left: 420px;
+}
+article.artigo_dias{
+  width: 425px;
+  float: left;
+  background-image: url('../imagens/banner_dias.jpg');
+  background-size: 100% 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 8px;
+  height: 250px;
+}
+article.artigo_programacao{
+  width: 425px;
+  float: right;
+  background-image: url('../imagens/banner_programacao.jpg');
+  background-size: 100% 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 8px;
+  height: 250px;
+}
+article.artigo_coisas{
+  width: 425px;
+  float: left;
+  background-image: url('../imagens/banner_coisas.jpg');
+  background-size: 100% 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  height: 250px;
+}
+article.artigo_tutoriais{
+  width: 425px;
+  float: right;
+  background-image: url('../imagens/banner_tutoriais.jpg');
+  background-size: 100% 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  height: 250px;
+}
