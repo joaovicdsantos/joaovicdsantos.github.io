@@ -27,7 +27,7 @@ header.cabecalho div.menus a{
   color: #ffffff;
   text-decoration: none;
   display: inline;
-  transition: 1s, all;
+  transition: 1s;
   font-weight: 400;
   font-size: 12pt;
 }

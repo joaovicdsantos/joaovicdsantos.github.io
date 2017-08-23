@@ -8,7 +8,7 @@ article a{
   background-color: #d3d3d3;
   font-weight: 400;
   padding: 5px;
-  transition: 1s, all;
+  transition: 1s;
 }
 article a:hover{
   border-radius: 10px;
