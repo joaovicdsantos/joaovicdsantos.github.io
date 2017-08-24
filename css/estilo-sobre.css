@@ -11,6 +11,15 @@ div.main_2 h1, div.main_2 p{
   width: 500px;
 }
 
+div.main_2 h1{
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+div.main_2 p{
+  padding-bottom: 10px;
+}
+
 div.main_2 img{
   position: relative;
   width: 350px;
