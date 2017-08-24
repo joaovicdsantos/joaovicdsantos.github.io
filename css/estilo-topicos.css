@@ -6,15 +6,11 @@ div.main_2{
   margin-bottom: 15px;
 }
 
-div.main_2 h1, div.main_2 p{
+div.main_2 h1, div.main_2 li{
   color: #777777;
   width: 500px;
 }
 
-div.main_2 img{
-  position: relative;
-  width: 350px;
-  left: 520px;
-  top: -255px;
-  margin-bottom: -220px;
+div.main_2 a{
+  color: #777777;
 }
