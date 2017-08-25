@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+div.main_2{
+  background-color: #eeeeee;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+div.main_2 h1, div.main_2 li{
+  color: #777777;
+  width: 500px;
+}
+
+div.main_2 a{
+  color: #777777;
+}

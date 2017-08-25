@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body{
+  font-family: Arial, sans-serif;
+  background-image: url('../imagens/fundo.png');
+  background-size: 15px 130px;
+  background-repeat: repeat-x;
+}
+p{
+  text-align: justify;
+  text-indent: 20px;
+  color: #e5e5e5;
+}
+header.cabecalho{
+  width: 890px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: -28px;
+  padding-top: 10px;
+}
+header.cabecalho div.menus{
+  width: 380px;
+}
+header.cabecalho div.menus a{
+  margin: 10px;
+  padding: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline;
+  transition: 1s;
+  font-weight: 400;
+  font-size: 12pt;
+}
+header.cabecalho div.menus a#atual{
+  color: #004fba;
+  background-color: #ffffff;
+  text-decoration: underline;
+  border-radius: 10px;
+}
+header.cabecalho div.menus a:hover{
+  color: #004fba;
+  background-color: #ffffff;
+  text-decoration: underline;
+  border-radius: 10px;
+}
+header.cabecalho div.menus{
+  position: relative;
+  left: 330px;
+  top: -65px;
+}
+div.main{
+  margin-top: -20px;
+  width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: -30px;
+}
+img#logo{
+  position: relative;
+  margin-bottom: 5px;
+  top: -1px;
+}
+footer#rodape{
+  width: 900px;
+  height: 70px;
+  margin: 0 auto;
+  clear: both;
+  background-color: #004fba;
+  margin-bottom: -10px;
+}
+footer#rodape p{
+  text-align: center;
+  padding-top: 15px;
+}
