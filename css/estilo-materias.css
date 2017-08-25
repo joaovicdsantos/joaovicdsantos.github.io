@@ -19,6 +19,9 @@ div.main_2 p{
   padding-bottom: 10px;
 }
 
+div.main_2 p#dia{
+  text-align: right;
+}
 div.main_2 pre{
   padding: 5px;
   width: 50%;
