@@ -6,21 +6,18 @@ div.main_2{
   margin-bottom: 15px;
 }
 
-div.main_2 h1{
+div.main_2 h1, div.main_2 a{
   color: #777;
 }
 
 div.main_2 h1{
+  font-size: 19pt;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 div.main_2 p{
   padding-bottom: 10px;
-}
-
-div.main_2 a{
-  color: #777;
 }
 
 div.main_2 details{

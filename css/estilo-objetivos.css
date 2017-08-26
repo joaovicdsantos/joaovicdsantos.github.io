@@ -1,16 +1,18 @@
 @charset "UTF-8";
 
 div.main_2{
-  background-color: #eeeeee;
+  background-color: #eee;
   padding: 10px;
   margin-bottom: 15px;
 }
 
 div.main_2 h1, div.main_2 p{
-  color: #777777;
+  color: #777;
+  width: 500px;
 }
 
 div.main_2 h1{
+  font-size: 19pt;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -24,5 +26,5 @@ div.main_2 img{
   position: relative;
   top: -240px;
   left: 520px;
-  margin-bottom: -210px;
+  margin-bottom: -220px;
 }
