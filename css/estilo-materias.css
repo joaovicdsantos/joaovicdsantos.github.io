@@ -22,10 +22,12 @@ div.main_2 p{
 div.main_2 p#dia{
   text-align: right;
 }
-div.main_2 pre{
-  padding: 5px;
+div.main_2 p#codigo{
+  padding: 10px;
   width: 50%;
   background-color: #dddddd;
+  border-radius: 10px;
+
 }
 div.main_2 pre p{
   color: #555555;

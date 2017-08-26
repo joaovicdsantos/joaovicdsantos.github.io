@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 div.main_2{
-  background-color: #eeeeee;
+  background-color: #eee;
   padding: 10px;
   margin-bottom: 15px;
 }
 
-div.main_2 h1, div.main_2 li{
-  color: #777777;
+div.main_2 h1{
+  color: #777;
 }
 
 div.main_2 h1{
@@ -20,5 +20,24 @@ div.main_2 p{
 }
 
 div.main_2 a{
-  color: #777777;
+  color: #777;
+}
+
+div.main_2 details{
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  color: #666;
+}
+
+div.main_2 details#grau2{
+  text-indent: 50px;
+}
+div.main_2 summary{
+  margin-bottom: 0px;
+}
+div.main_2 details#grau2 p{
+  text-indent: 100px;
+  margin-bottom: -20px;
 }
