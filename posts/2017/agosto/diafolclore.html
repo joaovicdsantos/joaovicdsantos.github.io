@@ -11,33 +11,7 @@
   </head>
 
   <body>
-    <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId            : '1856889521294651',
-        autoLogAppEvents : true,
-        xfbml            : true,
-        version          : 'v2.10'
-      });
-      FB.AppEvents.logPageView();
-    };
 
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/pt_BR/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-   </script>
-   <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
     <header class="cabecalho">
       <a href="../../../index.html"><img src="../../../imagens/logo.png" id="logo"></a>
       <div class="menus">
@@ -98,6 +72,8 @@
           diario gigante(hehe). Se você leu até aqui, Te amo. Na verdade se você já veio parar aqui
           eu já te amo.
         </p>
+        <div id="fb-root"></div>
+        <script type="text/javascript" src="../../../javascript/comentarios.js"></script>
         <div class="fb-comments" data-href="https://raolootnexii.github.io/posts/2017/agosto/diafolclore.html"
         data-width="870" data-numposts="5" data-mobile="true"></div>
       </div>
