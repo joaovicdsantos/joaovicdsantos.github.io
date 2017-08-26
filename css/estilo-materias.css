@@ -6,11 +6,11 @@ div.main_2{
   margin-bottom: 15px;
 }
 
-div.main_2 h1, div.main_2 p, a{
+div.main_2 h1, div.main_2 p, div.main_2 a, div.main_2 h2{
   color: #777777;
 }
 
-div.main_2 h1{
+div.main_2 h1,div.main_2 h2{
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
