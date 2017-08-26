@@ -12,7 +12,7 @@ div.main_2 h1, div.main_2 p, a{
 
 div.main_2 h1{
   padding-bottom: 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 div.main_2 p{
@@ -35,4 +35,9 @@ div.main_2 pre p{
 
 div.main_2 p a{
   color: #555555;
+}
+
+div.main_2 p#ultimo{
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
