@@ -27,15 +27,22 @@ article.artigo_principal{
   padding: 10px;
   height: 270px;
   width: 880px;
+  top: -20px;
 }
 article.artigo_principal p, h1{
   width: 400px;
 }
+article.artigo_principal h1#artigo_principal{
+  margin-top: -50px;
+}
 article.artigo_principal img#artigo_principal{
   position: relative;
   width: 450px;
-  top: -260px;
   left: 425px;
+  top: -270px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 5px;
+  margin-bottom: -250px;
 }
 article.artigo_dias{
   width: 425px;

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+div.main_2{
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+div.main_2 h1, div.main_2 p{
+  color: #777;
+}
+
+div.main_2 h1{
+  font-size: 30pt;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+div.main_2 p{
+  padding-bottom: 10px;
+}
+
+div.main_2 img{
+  width: 351px;
+  position: relative;
+  top: -240px;
+  left: 520px;
+  margin-bottom: -220px;
+}

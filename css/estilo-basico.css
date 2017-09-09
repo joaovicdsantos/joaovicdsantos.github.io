@@ -24,7 +24,10 @@ header.cabecalho{
   padding-top: 10px;
 }
 header.cabecalho div.menus{
-  width: 380px;
+  width: 393px;
+  position: relative;
+  left: 320px;
+  top: -55px;
 }
 header.cabecalho div.menus a{
   margin: 10px;
@@ -48,11 +51,6 @@ header.cabecalho div.menus a:hover{
   text-decoration: underline;
   border-radius: 10px;
 }
-header.cabecalho div.menus{
-  position: relative;
-  left: 330px;
-  top: -65px;
-}
 section.main{
   margin-top: -20px;
   width: 900px;
@@ -74,6 +72,7 @@ footer#rodape{
   margin-bottom: -10px;
 }
 footer#rodape p{
+  color: white;
   text-align: center;
   padding-top: 15px;
 }
