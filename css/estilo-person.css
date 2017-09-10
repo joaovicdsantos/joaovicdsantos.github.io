@@ -28,7 +28,7 @@ div.main_2 img#personagem1{
   float: right;
   top: -320px;
   margin-bottom: -220px;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 div.main_2 img#personagem2{
@@ -37,17 +37,15 @@ div.main_2 img#personagem2{
   float: right;
   top: -210px;
   margin-bottom: -220px;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 div.main_2 img#personagem3{
-  width: 352px;
-  height: 193px;
   position: relative;
   float: right;
   top: -195px;
   margin-bottom: -220px;
-  padding-right: 10px;
+  margin-right: 10px;
   padding-bottom: 0px;
 }
 
