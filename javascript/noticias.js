@@ -5,7 +5,7 @@ function iniciar(){
   		image.src = imgs[i];
   	}
   	fi = 1;
-  	window.setInterval('proxN()', 15000);
+  	tmr = setInterval('proxN()', 15000);
 }
 
 function trocarNoticia(){
@@ -45,16 +45,20 @@ function trocarNoticia(){
 }
 
 function proxN(){
+	clearInterval(tmr);
 	fi++;
 	if (fi > 3) {
 		fi = 1;
 	}
 	trocarNoticia();
+	tmr = setInterval('proxN()', 15000);
 }
 function anterN(){
+	clearInterval(tmr);
 	fi--;
 	if (fi < 1) {
 		fi = 3;
 	}
 	trocarNoticia();
+	tmr = setInterval('proxN()', 15000);
 }
