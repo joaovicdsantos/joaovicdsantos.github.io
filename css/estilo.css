@@ -2,12 +2,7 @@
 
 @font-face {
     font-family: roboto;
-    src: url("font/Roboto-Light.ttf");
-}
-
-@font-face {
-    font-family: roboto2;
-    src: url("font/Roboto-Black.ttf");
+    src: url("../font/Roboto-Black.ttf");
 }
 
 body { 
@@ -16,7 +11,7 @@ body {
 }
 
 div {
-    width: 500px;
+    width: 63%;
     margin: 21% auto 0px auto;
     background-color: rgba(0, 0, 0, .9);
     padding: 10px;
@@ -33,5 +28,4 @@ p {
 
 h1 {
     text-align: center;
-    font-family: roboto2, sans-serif;
 }
