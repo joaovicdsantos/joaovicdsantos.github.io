@@ -1,22 +1,106 @@
 <!DOCTYPE html>
+<html>
+	<head>
+		<title>RaolootneXII</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="img/icon.png">
+		<!-- Icons Font Awesome -->
+		<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+		<!-- ++++++++++++++++++ -->
+		<!-- Algumas definições da página -->
+		<meta name="viewport" content="width=width-device, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="robots" content="index, follow">
+		<!-- ++++++++++++++++++++++++++++ -->
+	</head>
+	<body>
+		<div class="banner">
+			<header class="cabecalho">
+				<a href="index.html"><h1 class="logo">RaolootneXII - Um blog focado em nada</h1></a>
+				<button class="btn-menu">
+					<i class="fas fa-bars fa-lg"></i>
+				</button>
+				<nav class="menu">
+					<a class="btn-close"><i class="fas fa-times-circle"></i></a>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="objetivo.html">Objetivo</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+					</ul>
+				</nav>
+			</header>
 
-<html lang="pt-br">
-    <head>
-        <title>Mudanças...</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    </head>
-    <body>
-        <div>
-            <h1>
-                Mudanças...
-            </h1>
-            <p>
-                É realmente incrivel como esse site muda,
-                mas dessa vez é uma mudança em todo visual.
-                Não tem data um data específica para volta,
-                mas vou ser o mais rápido que posso.
-            </p>
-        </div>
-    </body>
+			<h2>Frase do Dia:</h2>
+			<p>Bem eu morava em Recife, Pernambuco, numa casa média de tamanho, inacabada, mas aconchegante.</p>
+		</div>
+		<main class="topicos">
+			<article class="topico">
+				<a href=""><img src="img/banner-dias.jpg"></a>
+				<div class="inner">
+					<a href="dias.html">Dias da Minha Vida</a>
+					<h4>Merdas, tretas e felicidades.</h4>
+					<p> 
+						Aqui é apresentado alguns episódio, dignos de série no Netflix, sobre
+	          a minha vida em geral, o quão bosta ela é, o que eu faço, quem eu conheço.
+	          De um modo geral, aqui é um diario gigante formado por dias ruins e bons,
+	          experiencias ruins e boas. Mas qual é o Objetivo? Tem um menu ali meu
+	          jovem.
+        	</p>
+				</div>
+			</article>
+			<article class="topico">
+				<a href=""><img src="img/banner-programacao.jpg"></a>
+				<div class="inner">
+					<a href="dias.html">Programação</a>
+					<h4>Script, bugs e café.</h4>
+					<p> 
+						Aqui é onde será postado programas simples em algumas linguagens de programação que por algum motivo, razão ou circunstância possa servir de alguma maneira pra você. Também vou tentar explicar coisas simples sobre esse mundo o qual sou bastante novo, entretanto bastante interessado.
+        	</p>
+				</div>
+			</article>
+			<article class="topico">
+				<a href=""><img src="img/banner-coisas.jpg"></a>
+				<div class="inner">
+					<a href="dias.html">Coisas Aleatórias</a>
+					<h4>Reflexõe, histórias e viagens.</h4>
+					<p> 
+						Esse tópico vai de reflexões retardadas até qualquer coisa que me vier a mente em qualquer dia. O objetivo eu deixo claro aqui, ver como eu pensava, minhas ideologias, possiveis resoluções de problemas sociais na minha visão. É importante salientar que não tem o objetivo de fazer a cabeça de alguém.
+        	</p>
+				</div>
+			</article>
+			<article class="topico">
+				<a href=""><img src="img/banner-tutoriais.jpg"></a>
+				<div class="inner">
+					<a href="dias.html">Tutoriais</a>
+					<h4>Linux, Windows e Android.</h4>
+					<p> 
+						Desde Linux a, talvez, cubo mágico e a outras coisas que me parecem problemas que grande parte das pessoas tem, inclusive eu. Objetivo? Deixar salvo a resolução de tais problemas para que os mesmos possam ser usado, até por min mesmo, no local onde eu sei que vai tá. Meio dificil de explicar, mas basicamente é isso.
+        	</p>
+				</div>
+			</article>
+			<article class="topico-breve">
+				<h1>Em Breve...</h1>
+			</article>
+		</main>
+		<footer class="rodape">
+			<p class="copyright">
+				Copyright &copy; RaolootneXII 2018. Todos os direitos reservados.
+			</p>
+		</footer>
+		<!-- Jquery -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js">
+		</script>
+		<script>
+			$(".btn-menu").click(function(){
+				$(".menu").show();
+			});
+			$(".btn-close").click(function(){
+				$(".menu").hide();
+			});
+		</script>
+		<!---->
+
+	</body>
 </html>
