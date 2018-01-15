@@ -1,0 +1,12 @@
+main {
+	width: 100%;
+	padding: 3% 4%;
+	float: left;
+}
+.conteudo {
+	width: 100%;
+	background-color: #fff;
+	border-radius: 7px;
+	float: left;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}

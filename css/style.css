@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
 /* Reset */
+html, body {height:100%;}
 * {
 	margin: 0;
 	padding: 0;
@@ -29,7 +30,9 @@ img {
 	max-width: 100%;
 }
 /* ----- */
-
+.none {
+	font-size: 0;
+}
 /* Cabeçalho */
 .cabecalho {
 	width: 100%;
@@ -52,7 +55,7 @@ img {
 	color: #000;
 	border-radius: 56px;
 	cursor: pointer;
-
+	text-align: center;
 }
 /* Menu */
 .menu {
@@ -113,54 +116,7 @@ img {
 	font-size: 1.3em;
 }
 /* ------ */
-/* Main */
-.topicos {
-	width: 100%;
-	float: left;
-	padding: 3% 4%;
-}
-.topico {
-	width: 100%;
-	width: 100%;
-	background-color: #fff;
-	text-align: center;
-	border-radius: 7px;
-	margin-bottom: 3%;
-	box-shadow: 1px 1px 5px rgba(0,0,0,.5)
-}
-.topico img {
-	border-radius: 5px 5px 0 0;
-	width: 100%;
-}
-.inner {
-	padding: 7%;
-}
-.inner a {
-	width: 100%;
-	font-size: 1.5em;
-	color: #fff;
-	font-weight: 700;
-	background-color: rgba(0,0,0,.8);
-	padding: 0 3%;
-}
-.inner h4 {
-	font-size: 1.1em;
-	margin-bottom: 2%;
-}
-.inner p {
-	text-align: left;
-}
-.topico-breve {
-	float: right;
-	width: 66%;
-	background-color: #fff;
-	margin-top: 2%;
-	margin-left: 2%;
-	text-align: center;
-	font-size: 3em;
-	border-radius: 7px;
-	display: none;
-}
+
 /* Rodapé */
 .rodape {
 	width: 100%;
@@ -182,45 +138,11 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-	.topico {
-		width: 49%;
-		float: left;
-	}
-	.topico:nth-child(2) {
-		float: right;
-	}
-	.topico:nth-child(4) {
-		float: right;
-	}
+	
 }
 
 @media screen and (min-width: 960px) {
-	.topico {
-		width: 32%;
-		float: left;
-		margin: 0;
-
-	}
-	.topico:nth-child(1) {
-		margin-right: 2%;
-		float: left;
-		margin-bottom: 0;
-	}
-	.topico:nth-child(2) {
-		float: left;
-		margin-right: 2%;
-	}
-	.topico:nth-child(3) {
-		float: left;
-		margin: 0;
-	}
-	.topico:nth-child(4) {
-		margin-top: 2%;
-		float: left;
-	}
-	.topico-breve {
-		display: inline-block;
-	}
+	
 }
 
 @media screen and (min-width: 1280px) {
@@ -228,7 +150,7 @@ img {
 		display: none;
 	}
 	.menu {
-		width: 30%;
+		width: auto;
 		height: 56px;
 		line-height: 56px;
 		float: right;
