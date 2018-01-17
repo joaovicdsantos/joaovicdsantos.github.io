@@ -94,32 +94,3 @@
 		display: inline-block;
 	}
 }
-
-@media screen and (min-width: 1280px) {
-	.btn-menu, .btn-close {
-		display: none;
-	}
-	.menu {
-		width: auto;
-		height: 56px;
-		line-height: 56px;
-		float: right;
-		background-color: transparent;
-		display: block !important;
-		position: static;
-	}
-	.menu li {
-		padding: 0;
-		float: left;
-		display: inline;
-	}
-	.menu li a {
-		color: #fff;
-		font-size: 1.1em;
-		padding: 15px;
-	}
-	.menu li a:hover {
-		border: none;
-		color: #004fb1;
-	}
-}

@@ -161,12 +161,11 @@ img {
 	.menu li {
 		padding: 0;
 		float: left;
-		display: inline;
 	}
 	.menu li a {
 		color: #fff;
 		font-size: 1.1em;
-		padding: 15px;
+		padding: 21px;
 	}
 	.menu li a:hover {
 		border: none;
