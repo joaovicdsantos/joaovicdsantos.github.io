@@ -40,7 +40,7 @@ main {
 	border-bottom: 1px solid rgba(0,0,0,.1);
 }
 .conteudo-escrito p {
-
+	text-align: justify;
 }
 /* ---- */
 /* Medias */
