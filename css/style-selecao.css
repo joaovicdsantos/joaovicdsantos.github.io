@@ -42,7 +42,9 @@ main {
 details a {
 	color: #130400;
 	text-decoration: underline;
-	padding: 1% 3%;
+}
+details p {
+	margin: 1% 3%;
 }
 /* Medias */
 @media screen and (min-width: 768px) {
