@@ -1,3 +1,5 @@
+Estrutura básica conteúdo HTML:
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -5,7 +7,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="../../css/style.css">
 		<link rel="stylesheet" href="../../css/style-conteudo.css">
-		<link rel="icon" href="img/icon.png">
+		<link rel="icon" href="../../img/icon.png">
 		<!-- Icons Font Awesome -->
 		<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 		<!-- ++++++++++++++++++ -->
@@ -19,16 +21,16 @@
 	<body>
 		<div class="banner">
 			<header class="cabecalho">
-				<a href="index.html"><h1 class="logo">RaolootneXII - Um blog focado em nada</h1></a>
+				<a href="../../index.html"><h1 class="logo">RaolootneXII - Um blog focado em nada</h1></a>
 				<button class="btn-menu">
 					<i class="fas fa-bars fa-lg"></i>
 				</button>
 				<nav class="menu">
 					<a class="btn-close"><i class="fas fa-times-circle"></i></a>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="objetivo.html">Objetivo</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="../../index.html">Home</a></li>
+						<li><a href="../../objetivo.html">Objetivo</a></li>
+						<li><a href="../../sobre.html">Sobre</a></li>
 						<li><a class=""><i class="fas fa-heart none"></i></a></li>
 					</ul>
 				</nav>
@@ -36,8 +38,18 @@
 		</div>
 		<main>
 			<section class="conteudo">
-				
-			</section>
+			<img src="">
+			<div class="conteudo-escrito">
+				<h3 class="data"><time datetime="2018/01/19">19 de janeiro de 2018</time></h3>
+				<!-- AQUI -->
+			</div>
+			<div class="comentarios">
+			        <script type="text/javascript" src="../../js/comentarios.js"></script>
+			        <div class="fb-like" data-href="https://raolootnexii.github.io/conteudo/2017/script-medias.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+			        <div class="fb-comments" data-href="https://raolootnexii.github.io/conteudo/2017/script-medias.html" data-numposts="5" data-mobile="true">
+			        </div>
+				</div>
+			</section>		
 		</main>
 		<footer class="rodape">
 			<p class="copyright">
@@ -45,7 +57,7 @@
 			</p>
 		</footer>
 		<!-- Jquery -->
-		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="../../js/jquery-3.2.1.js"></script>
 		<script>
 			$(".btn-menu").click(function(){
 				$(".menu").show();
