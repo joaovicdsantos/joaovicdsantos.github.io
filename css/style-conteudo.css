@@ -70,6 +70,8 @@ main {
 	padding: 2%;
 	float: left;
 }
+
+
 @media screen and (min-width: 768px) {
 	.subtitles-conteudo {
 		margin-top: 5%;
