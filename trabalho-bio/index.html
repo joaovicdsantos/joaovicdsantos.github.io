@@ -117,6 +117,7 @@
     th {
       border: 1px solid rgba(255, 255, 255, .6);
     }
+
     td {
       border: 1px solid rgba(0, 0, 0, .1);
     }
@@ -129,17 +130,36 @@
       font-size: 1.2rem;
       border: none;
     }
+
     td input:disabled {
       color: #fff;
     }
+
     .cabecote {
       margin-right: 5px;
-    padding-right: 18px;
-    height: 71px;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
+      padding-right: 18px;
+      height: 71px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
     }
+
     .msg-mendel {
       display: flex;
+    }
+
+    .d3 {
+      background-color: #130f40;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      color: #fff;
+    }
+
+    .caracteristicas {
+      border: 1px solid;
+      border-radius: 9px;
+      padding: 5px;
+      background-color: #FFF;
+      margin: 0 5px;
+      color: #130f40;
     }
   </style>
 </head>
@@ -159,15 +179,16 @@
     <div id="passos1">
       <div class="msg msg-mendel" id="msg1">
         <img src="gregor-mendel-cabeca.png" class="cabecote">
-        <p>Olá, meu pequeno estudante! Se está aqui, é porque você quer aprender mais sobre a Segunda Lei de Mendel (eu lindo, hehe) na prática. Como eu consegui chegar até essa teoria? A partir da observação e o teste realizado com ervilhas, notei que havia um certo padrão que poderia acontecer dependendo da geração com a qual trabalhava. O primeiro passo para realizar o cruzamento que você quer, é encontrar os grupinhos de alelos que podem ser formados por apenas um indivíduo. Aperte no botão inferior direito para eu te ajudar nessa jornada.</p>
+        <p>Olá, meu estudante! Se está aqui, é porque você quer aprender mais sobre a Segunda Lei de Mendel (eu lindo e maravilhoso, hehe) de uma forma prática. Podemos também chamá-la de Lei da Segregação Independente. Como eu consegui chegar até essa teoria? A partir da observação e o teste realizado com ervilhas, notei que havia um certo padrão que poderia acontecer dependendo da geração com a qual trabalhava. O primeiro passo para realizar o cruzamento que você quer, é encontrar os grupinhos de alelos que podem ser formados por apenas um indivíduo. Aperte no botão inferior direito para eu te guiar e ajudar nessa jornada.
+        </p>
       </div>
-      <p class="msg" id="msg2">Inicialmente vamos separar cada alelo (par de genes) dos indivíduos!</p>
+      <p class="msg" id="msg2">Inicialmente vamos separar cada alelo (par de genes de mesma letra) dos indivíduos!</p>
       <h5 class="msg" id="msg3" style="text-align: left;">Indivíduo 1:</h5>
       <p class="msg" id="msg4" style="text-align: left;"></p>
       <p class="msg" id="msg5" style="text-align: left;"></p>
       <div class="msg msg-mendel" id="msg6">
         <img src="gregor-mendel-cabeca.png" class="cabecote">
-      <p style="text-align: left;">Entendeu? Agora encontre as combinações do outro indivíduo. Lembre-se do recurso de chuveirinho e observe bem o que eu fiz. :D</p>
+        <p style="text-align: left;">Entendeu? Quando estiver pronto clique no botão para avançar e encontre as combinações do outro indivíduo. Lembre-se do recurso de chuveirinho e observe bem o que eu fiz. :D</p>
       </div>
       <h5 class="msg" id="msg7" style="text-align: left;">Indivíduo 2:</h5>
       <p class="msg" id="msg8" style="text-align: left;"></p><br>
@@ -175,7 +196,7 @@
         <img src="gregor-mendel-cabeca.png" class="cabecote">
         <p style="text-align: left;">PARABÉÉÉÉÉÉNS!!! Está pronto para iniciar de fato o cruzamento e saber quais serão os indivíduos que podem ser gerados??? EEIMMM? Então passa a para o próximo passo!</p><br>
       </div>
-      <p class="msg" id="msg11">Primeiro eu vou criar uma tabela linda e maravilhosa para você</p>
+      <p class="msg" id="msg11">Primeiramente, irei criar uma tabela 5x5 no modelinho:</p>
       <table class="msg" id="msg12">
         <tr>
           <td style="width: 137px;height: 80px;"><img src="gregor-mendel.png" alt="" style="width: 80px;"></td>
@@ -215,7 +236,7 @@
       </table>
       <div class="msg msg-mendel" id="msg13">
         <img src="gregor-mendel-cabeca.png" class="cabecote">
-        <p style="text-align: left;">Bicho, tu é esperto demais, outro nível. Einstein nem nos seus pés consegue tocar. Agora para finalizar, preciso que você me reponda algumas perguntas e assim teremos a análise geral.</p><br>
+        <p style="text-align: left;">Bicho, tu é esperto demais, outro nível. Einstein nem nos seus pés consegue tocar. Agora para finalizar, preciso que você me reponda algumas perguntas e assim teremos a análise geral dos possíveis nascimentos.</p><br>
       </div>
       <div class="msg" id="msg14">
         <p style="text-align: left;">
@@ -238,11 +259,15 @@
       <div class="msg msg-mendel" id="msg15">
         <img src="gregor-mendel-cabeca.png" class="cabecote">
         <p style="text-align: left;">Com base no que você disse eu concluo que:</p>
-        <p><span id="dd"></span> indivíduo(s) será(ão) <span class="caractletra1mai"></span> e <span class="caractletra2mai"></span>.</p>
-        <p><span id="dr"></span> indivíduo(s) será(ão) <span class="caractletra1mai"></span> e <span class="caractletra2min"></span>.</p>
-        <p><span id="rd"></span> indivíduo(s) será(ão) <span class="caractletra1min"></span> e <span class="caractletra2mai"></span>.</p>
-        <p><span id="rr"></span> indivíduo(s) será(ão) <span class="caractletra1min"></span> e <span class="caractletra2min"></span>.</p>
-        
+        <p class="caracteristicas"><span id="dd"></span> indivíduo(s) será(ão) <span class="caractletra1mai"></span> e <span
+            class="caractletra2mai"></span>.</p>
+        <p class="caracteristicas"><span id="dr"></span> indivíduo(s) será(ão) <span class="caractletra1mai"></span> e <span
+            class="caractletra2min"></span>.</p>
+        <p class="caracteristicas"><span id="rd"></span> indivíduo(s) será(ão) <span class="caractletra1min"></span> e <span
+            class="caractletra2mai"></span>.</p>
+        <p class="caracteristicas"><span id="rr"></span> indivíduo(s) será(ão) <span class="caractletra1min"></span> e <span
+            class="caractletra2min"></span>.</p>
+
         <br>
       </div>
     </div>
@@ -259,7 +284,7 @@
     var indv2par2;
     var indv2par3;
     var indv2par4;
-    
+
     var letra1MIN;
     var letra2MIN;
     var letra1MAI;
@@ -275,6 +300,8 @@
     const indv2 = document.querySelector("#indv2");
     btnCruzar.addEventListener('click', async (e) => {
       e.preventDefault();
+      indv1.disabled = true;
+      indv2.disabled = true;
       btnCruzar.style.opacity = '0';
       document.querySelector('#msg1').style.opacity = '1';
       //await new Promise(r => setTimeout(r, 3000));
@@ -304,7 +331,7 @@
         } else if (passo == 5) {
           document.querySelector('#msg11').style.opacity = '1';
           passo++;
-          await new Promise(r => setTimeout(r, 2000));
+          await new Promise(r => setTimeout(r, 1200));
           document.querySelector('#msg12').style.opacity = '1';
           document.querySelector('#indv1par1').innerHTML = indv1par1;
           document.querySelector('#indv1par2').innerHTML = indv1par2;
@@ -320,7 +347,7 @@
           await new Promise(r => setTimeout(r, 500));
           document.querySelector('#msg11').innerHTML = 'Basicamente, o que você precisa fazer é mais um chuveirinho! Vou fazer o primeiro pra você.';
           document.querySelector('#msg11').style.opacity = '1';
-          await new Promise(r => setTimeout(r, 2000));
+          await new Promise(r => setTimeout(r, 200));
           const cell = document.querySelectorAll('.d2');
           cell.forEach(elem => {
             row_t = elem.getAttribute('row');
@@ -472,20 +499,20 @@
         return true;
     }
     function calcularIndv() {
-      
+
       for (let i = 1; i <= 4; i++) {
         for (let c = 1; c <= 4; c++) {
           res = respostaPorPos(i.toString(), c.toString());
           // Totalmente recessivo rr
-          console.log(res.split(new RegExp(letra1MIN, 'g')).length-1)
-          console.log(res.split(new RegExp(letra2MIN, 'g')).length-1)
-          if (res.split(new RegExp(letra1MIN, 'g')).length-1 > 1 && res.split(new RegExp(letra2MIN, 'g')).length-1 > 1) {
+          console.log(res.split(new RegExp(letra1MIN, 'g')).length - 1)
+          console.log(res.split(new RegExp(letra2MIN, 'g')).length - 1)
+          if (res.split(new RegExp(letra1MIN, 'g')).length - 1 > 1 && res.split(new RegExp(letra2MIN, 'g')).length - 1 > 1) {
             caracteristicas[3] += 1;
-          // Recessivo no primeiro rd
-          } else if (res.split(new RegExp(letra1MIN, 'g')).length-1 > 1 && res.split(new RegExp(letra2MIN, 'g')).length-1 <= 1) {
+            // Recessivo no primeiro rd
+          } else if (res.split(new RegExp(letra1MIN, 'g')).length - 1 > 1 && res.split(new RegExp(letra2MIN, 'g')).length - 1 <= 1) {
             caracteristicas[1] += 1;
-          // Recessivo no segundo dr
-          } else if (res.split(new RegExp(letra1MIN, 'g')).length-1 <= 1 && res.split(new RegExp(letra2MIN, 'g')).length-1 > 1) {
+            // Recessivo no segundo dr
+          } else if (res.split(new RegExp(letra1MIN, 'g')).length - 1 <= 1 && res.split(new RegExp(letra2MIN, 'g')).length - 1 > 1) {
             caracteristicas[2] += 1;
           } else {
             caracteristicas[0] += 1;
