@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludibriado</title>
+</head>
+<body>
+    <div id="somedaki">
+        <p>Bom pessoal, estou testando esse formato de atividades que encontrei na internet! Basta clicar no botão abaixo. Vale ressaltar que não pode mudar de janela após iniciar e que seu email será salvo!!</p>
+        <button id="abrirProva" style="background-color: #2980b9;border: 0;padding: 10px;border-radius: 5px;color: #fff;">Iniciar Prova</button>
+    </div>
+    <div style="margin: 0; padding: 0;display: none;justify-content: center;align-items: center;height: 100vh;" id="conteudo">
+        <div style="background-color: rgba(0, 0, 0, .8);padding: 10px;border-radius: 10px;text-align: center;">
+            <h1 style="color: white;display: block;">Feliz Natal, Otário(a)!</h1>
+            <p style="color: white;font-weight: 100;">
+                Agora vaza e não fala nada no grupo! 🤫 
+            </p>
+        </div>
+        <audio id="vid">
+            <source src="./img/notime.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script>
+        const abrirProvaBotao = document.querySelector("#abrirProva");
+        abrirProvaBotao.addEventListener("click", function(e) {
+            console.log("sim")
+            document.body.style.backgroundImage = "url('./img/robson-lindo.jpg')";
+            document.body.style.backgroundSize = "300px";
+            document.querySelector("#vid").play();
+            document.querySelector("#conteudo").style.display = "flex";
+            document.querySelector("#somedaki").style.display = "none";
+        });
+        
+    </script>
+</body>
+</html>
