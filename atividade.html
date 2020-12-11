@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <title>Ludibriado</title>
 </head>
-<body>
-    <div id="somedaki">
-        <p>Bom pessoal, estou testando esse formato de atividades que encontrei na internet! Basta clicar no botão abaixo. Vale ressaltar que não pode mudar de janela após iniciar e que seu email será salvo!!</p>
-        <button id="abrirProva" style="background-color: #2980b9;border: 0;padding: 10px;border-radius: 5px;color: #fff;">Iniciar Prova</button>
+
+<body style="background-color: #3498db; font-family: 'Roboto', sans-serif;">
+    <div id="somedaki" style="background-color: #fff;padding: 20px;width: 50%;margin:0 auto;border-radius: 5px;box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);">
+        <h1>Atividade III de Geometria - Geometria Espacial</h1>
+        <hr>
+        <p style="font-weight: 200;">Bom pessoal, estou testando esse formato de atividades que encontrei na internet!
+            Basta clicar no botão abaixo. Vale ressaltar que <b>não pode mudar de janela após iniciar</b> e que <b>seu
+                email será salvo</b>!!</p>
+        <button id="abrirProva"
+            style="background-color: #2980b9;border: 0;padding: 10px;border-radius: 5px;color: #fff;"><b>Iniciar Atividade</b></button>
     </div>
-    <div style="margin: 0; padding: 0;display: none;justify-content: center;align-items: center;height: 100vh;" id="conteudo">
+    <div style="margin: 0; padding: 0;display: none;justify-content: center;align-items: center;height: 100vh;"
+        id="conteudo">
         <div style="background-color: rgba(0, 0, 0, .8);padding: 10px;border-radius: 10px;text-align: center;">
             <h1 style="color: white;display: block;">Feliz Natal, Otário(a)!</h1>
             <p style="color: white;font-weight: 100;">
-                Agora vaza e não fala nada no grupo! 🤫 
+                Agora vaza e não fala nada no grupo! 🤫
             </p>
         </div>
         <audio id="vid">
@@ -23,7 +33,7 @@
     </div>
     <script>
         const abrirProvaBotao = document.querySelector("#abrirProva");
-        abrirProvaBotao.addEventListener("click", function(e) {
+        abrirProvaBotao.addEventListener("click", function (e) {
             console.log("sim")
             document.body.style.backgroundImage = "url('./img/robson-lindo.jpg')";
             document.body.style.backgroundSize = "300px";
@@ -31,7 +41,8 @@
             document.querySelector("#conteudo").style.display = "flex";
             document.querySelector("#somedaki").style.display = "none";
         });
-        
+
     </script>
 </body>
+
 </html>
