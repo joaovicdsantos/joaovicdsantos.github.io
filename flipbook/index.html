@@ -1,0 +1,263 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Flipbook</title>
+     <meta name="description" content="Flipbook  ">
+     <meta name="robots" content="noindex, nofollow">
+  <!--  <meta name="viewport" content="width = 1050, user-scalable = no" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://www.flipbookpdf.net/web/files/flipbooks//1-thumb.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans:400,700|Ubuntu:400,700|Great+Vibes' rel='stylesheet' type='text/css'>
+
+
+    <script type="text/javascript" src="flipbook/extras/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="flipbook/extras/jquery-ui-1.8.20.full.min.js"></script>
+    <script type="text/javascript" src="flipbook/extras/modernizr.2.5.3.min.js"></script>
+    <script type="text/javascript" src="flipbook/lib/hash.js"></script>
+        <script type="text/javascript">
+        var flipbookcfg={
+            url: ".\/data\/",
+            cover: 0,
+            numPages: 6,
+            textTip: "Press ESC to exit. Use the keyboard arrows to change the page.",
+            background: ".\/flipbook\/files\/backgrounds\/back14.svg",
+            showSlider: "null",
+            showSocial: "null",
+            showformat: "1",
+            companyLogo: "https:\/\/www.flipbookpdf.net\/web\/site\/img\/logonet.png",
+            title: "",
+            tagtitle: "Flipbook", 
+           description: "", 
+            showDownload: "null",
+            backlink: "https:\/\/www.flipbookpdf.net",
+            opacity: "0.4",
+            name: "0c540ffcc9e372cb9b0ec431bb9276703ef1eb69202507.pdf",
+            direction: "ltr", 
+            flipsound: "null", 
+            widthimg: "1488",
+            heightimg: "2105" 
+            
+        };
+    </script>
+    <style>
+ body {
+        overflow-y: scroll;
+    }
+    ::-webkit-scrollbar {
+        width: 8px; 
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #f1f1f1; 
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #888;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }    
+         
+    
+    .logo-backs {
+    opacity: 0.4;
+}
+.form-element1 input[type=text], .form-element1 select, .form-element1 textarea {
+border: 1px solid gray;
+padding: 5px;
+min-width: 74px;
+resize: vertical;
+}
+
+.form-element1 {
+margin-top: 10px;
+margin-bottom: 12px;
+margin-left: 65px;
+}
+
+@media only screen and (max-width: 750px) {
+.flipbook-title {
+    display:none!important;
+  }
+.zoom-icon {
+    display:none;
+  }
+
+.controls-pdf {
+    right: 20px!important;
+}  
+    
+  
+}
+
+
+#ads {
+z-index:100; 
+position: fixed; 
+bottom:14px; 
+text-align: center; 
+padding: 2px; 
+width: 100%;
+}
+
+
+
+
+
+
+
+</style>
+
+    
+
+</head>
+<body>
+ 
+
+
+<div class="logo-backs"></div>
+
+<audio id="audio" src="flipbook/pics/page-flip.mp3"></audio>
+
+
+<a href="https://www.flipbookpdf.net">
+<!-- <img src="https://www.flipbookpdf.net/web/site/img/logonet.png" style="position: absolute;bottom:15px;left: 15px;z-index: 100;height: auto; width: auto; max-width: 16%; max-height: 19%;"></a> -->
+
+
+    <div class="flipbook-title" style="display: none;">
+        <h1></h1>
+        <h2></h2>
+        <p></p>
+    </div>
+    
+
+
+
+    
+
+    
+    <div id="canvas">
+
+        <!--<div class="close-icon">
+            <img src="flipbook/pics/close.png" style="cursor: pointer;" />
+        </div>
+        -->
+
+        
+        <div class="controls-pdf">
+        <div class="controlzoom" style="display:none">
+        <a href="#" id="zoomin" style="font-size:16px; color:#808080; text-decoration: none; font-weight:bold"><img src="flipbook/pics/zoomin.png" /></a>
+         <a href="#" id="zoomout" style="font-size:16px; color:#808080; text-decoration: none; font-weight:bold"><img src="flipbook/pics/zoomout.png" /></a>
+
+</div>
+        
+                        
+             
+            <a href="./PDF/0c540ffcc9e372cb9b0ec431bb9276703ef1eb69202507.pdf" target="_blank" ><img style="display:none;" src="flipbook/pics/down-pdf.png" /></a>
+            <div class="zoom-icon zoom-icon-in"></div>
+            <input type="image" class="fs" src="flipbook/pics/fs.png" onclick="openFullscreen();"/>
+             <a href="#" id="prev"></a>
+            <a href="#" id="next"></a>
+        </div>
+
+        <div class="magazine-viewport" id="flipfull">
+         
+        
+            <div class="container">
+                <div class="magazine">
+                    
+                    <div ignore="1" class="next-button"></div>
+                    <div ignore="1" class="previous-button"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div id="slider-bar" class="turnjs-slider">
+                        <div id="slider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       
+    
+    <script type="text/javascript" src="flipbook/js/core.js"></script>
+    <script type="text/javascript">
+        yepnope({
+            test: Modernizr.csstransforms,
+            yep: ['flipbook/lib/turn.min.js'],
+            nope: ['flipbook/lib/turn.html4.min.js', 'flipbook/css/jquery.ui.html4.css'],
+            both: ['flipbook/lib/zoom.min.js', 'flipbook/css/jquery.ui.css', 'flipbook/js/magazineoff.js', 'flipbook/css/magazine.css'],
+            complete: loadApp
+        });
+    </script>
+    
+    
+    
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144220429-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144220429-1');
+</script>    
+    
+<!-- AddToAny BEGIN -->
+<a class="a2a_dd" href="https://www.addtoany.com/share"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAAQCAYAAABJJRIXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA9tJREFUeNrkV01IG1sU/mZM4g+29W9pgsJDxJ0/+BaNCnGn2IcacamN2Ba6cVPdqKBuxILo7hWMCO70KYg/KO7Ut1AEFwpKW6zSYmk1oqkaze+bc6YznbxMoqVYBD+4mXt+7plzzz3nzI0ACevr6yHcUxQVFQkCBSA5ORlZWVmIj4+/N5u/vLzE3t4ezs/PIRIjOzv7XgWAkJCQwPsmGOjHZDJFKK28B179A6x+0Dfyp7T+tR2w/hH7ZXNzcxgaGsLR0RHTtbW1aG5uRlJSkirv7e3F0tLSbw+EcvBiNIVYASCQjHRiYXx8nAMwMDDAm5yfn4fb7UZnZ+edygox1ia1CL6RRyydCBurqygrK4PFYmGaTr+urg5ra2vY2dm5M0Ew3KZxs9mMzc1NLoWMjAzm5ebm6qb+4OAgJiYmeN7Y2AiHwxFWUlQyBLLT0tKC0tJSpnt6enB6eoqTkxMcHx9jcnKS+cPDwxgZGeF5cXExuru71RKMAH0d9CA8k0c0XCdXIL08VFJSws+xsbEI+ezsLMvpqaX39/eZ3t7eZlrxUyqtUHV1dZh9og8PDyNskg2p+4eamppCTqdT1z+yK952qnV0dHAvoAygEqAT1MuEiooK9dQI9PnSZk5hYSHT+fn5nFlKo1V4SqYRqA9RA6YypNOvqanBzMxM7HKQAqIjEuSm8VymAn/LOnEvhDAt/bXhSExMhN1u5zltpr29ndM2PT09qh2iaVxcXKC/vx+Li4sRdrVrtHMKEJWWUl7X+cpBCAQC17aLHzrR+OHweDyorKxEV1cXpNRU+Xl5efzc3d1FSkqK6phiR3kSn+bT09PY2NjA6Ogo95jl5WXOLpLR+P96pW/U19dzE76Jr7wjv8+vcw8whHV/00uD7l1Bby3BaDCivLycN5GZmQlzppn51KzIyZycHF4bDASh9SHglx0lPvEODg6QmpqKRw8f4fPBZ0xNTal6JFeCoPXD8dQB57ATBQUF/N6Vf1eYb31sjR4En98XIXhtT7jRZUlvrYK2tjYsLCygtbUVLpeLeTabDX19fYiLi+O1gaC8acWOP/A9GBKfeFVVVdja2sKTv55w+VitVmrmcH9z48HDB2oQtH7Yym14++4tpIbINK1raGiI6iv/d7CYLTAYbudrSXZpCIKgbo4zIBhU5UajkcuHHZL06Err9Xn5tEVRhNFkhCiIvGFaRwG8urriuSlevu16r7xh76VbMOkppeX3+3lo4fP58PHTRzkTvnz9grTUNN3r86+C6pAc/hn52dlZmJycjQbPhSdqT4oFr9cL17Hrxyfgvv+V/k+AAQC+rKzN43Lz0AAAAABJRU5ErkJggg==" width="65" height="16" border="0" alt="Share" style="position: absolute;bottom:25px;right:10px;z-index: 110;"></a>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+</script>
+<script defer async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+ 
+
+       
+       <script>
+var elem = document.getElementById("flipfull");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  } else if (elem.webkitEnterFullscreen) {
+       elem.webkitEnterFullscreen(); //for iphone this code worked
+  }
+}
+</script>
+
+
+
+
+   
+</body>
+</html>
+
